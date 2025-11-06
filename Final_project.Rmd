@@ -1,0 +1,61 @@
+---
+title: "Final project"
+author: "Adriana Gutierrez Yllu"
+date: "2025-11-06"
+output: html_document
+---
+
+```{r, set-chunk-opts, echo = FALSE, include=FALSE, message=FALSE}
+library(here)
+
+here::i_am(
+  "Final_project.Rmd"
+)
+```
+
+# Introduction
+This dataset captures participants' initial visit to a pilot program designed to enhance awareness and facilitate early detection of hypertension through free blood pressure screenings and a brief educational session on lifestyle modification. Despite these efforts the program has not achieved the intended level of reach. 
+
+The first objective of this process evaluation report is to identify key barriers and facilitators influencing participation in the pilot hypertension screening program. 
+
+The second objective is to assess participants' preferences from the pilot program to inform the implementation of the full- scale program. 
+
+### Table 1. Baseline characteristics of participants
+
+Table 1 summarizes the baseline characteristics of participants in the pilot hypertension screening program, stratified by age group (≤50 years and >50 years). All the participants were Hispanic. 
+
+Most participants reported having health insurance, though coverage was more consistent among those over 50 years (100% (4/4)) compared to younger participants (60% (3/5)). A greater proportion of younger participants were actively working (80% (4/5)) vs. older participants (50% (2/4)). Nutrition talks were reported more often by older participants (75% (3/4)) compared with younger participants (40% (2/5)).
+
+Regarding health history, a personal history of hypertension was reported by both age groups (67% (6/9)), and family history of hypertension was more common among younger participants (60% (3/5)) than older participants (25% (1/4)).
+
+```{r, table-1, echo=FALSE}
+table1 <- readRDS(here::here("output", "table1.RDS"))
+table1
+```
+
+### Figure 1. Suggestions to Reach More People by Age Group 
+
+This figure presents participants’ suggestions on how to reach more people with the hypertension screening program, stratified by age group.
+
+Among younger participants, the most common suggestions were increasing advertising (40%) and “don’t know” (40%). In contrast, older participants most frequently recommended visiting churches (50%).
+
+These findings suggest that oureach preferences differ by age group. Younger participants favored broad adverising and school-based approches, reflecting their likely engagement with medica and edicational settings. Older participants emphasized churches as trusted community spaces, highlighting the role of faith-based organizations in program dissemination.
+
+```{r plot-data, fig.align="center", echo=FALSE, message=FALSE, out.width="600px"}
+figure1 <- readRDS(here::here("output", "figure1.RDS"))
+figure1
+```
+
+
+
+
+
+
+
+
+
+.
+
+
+
+
