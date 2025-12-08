@@ -1,6 +1,7 @@
 library(gtsummary)
 library(here)
 library(dplyr)
+library(broom)
 
 data <- readRDS(here::here("output", "cleaned_data.RDS"))
 

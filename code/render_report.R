@@ -4,5 +4,5 @@ here::i_am(
 
 rmarkdown::render(
   here::here("Final_project.Rmd"),
-  output_file = here::here("Final_project.html")
+  output_file = here::here("report/Final_project.html")
 )

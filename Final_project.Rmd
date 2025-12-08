@@ -5,6 +5,7 @@ date: "2025-11-06"
 output: html_document
 ---
 
+
 ```{r, set-chunk-opts, echo = FALSE, include=FALSE, message=FALSE}
 library(here)
 
@@ -12,6 +13,7 @@ here::i_am(
   "Final_project.Rmd"
 )
 ```
+
 
 # Introduction
 This dataset captures participants' initial visit to a pilot program designed to enhance awareness and facilitate early detection of hypertension through free blood pressure screenings and a brief educational session on lifestyle modification. Despite these efforts the program has not achieved the intended level of reach. 
@@ -41,7 +43,7 @@ Among younger participants, the most common suggestions were increasing advertis
 
 These findings suggest that oureach preferences differ by age group. Younger participants favored broad adverising and school-based approches, reflecting their likely engagement with medica and edicational settings. Older participants emphasized churches as trusted community spaces, highlighting the role of faith-based organizations in program dissemination.
 
-```{r plot-data, fig.align="center", echo=FALSE, message=FALSE, out.width="600px"}
+```{r, plot-data, fig.align="center", echo=FALSE, message=FALSE, out.width="600px"}
 figure1 <- readRDS(here::here("output", "figure1.RDS"))
 figure1
 ```
