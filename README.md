@@ -22,23 +22,8 @@ The final product is a fully reproducible HTML report generated using `make` and
 
 ---
 
-#1.Instructions to generate the report LOCALLY (without Docker)
-From the project root, run: 
-```bash
-make Final_project.html
-```
-This will: 
-1. Load and clean the data (`code/load_data.R` -> `output/cleaned_data.RDS`)
-2. Generate Table1 (`code/make_table.R` -> `output/table1.RDS`)
-3. Generate Figure1 (`code/Firgure1.R` -> `output/figure1.RDS` and `output/graph1.png`)
-4. Render the final HTML report (`code/render_reprot.R` -> `report/Final_project.html`)
 
-To remove outputs and final_report (clean the directory):
-```bash
-make clean
-```
-
-#2.Instructions to generate the report USING DOCKER
+# Instructions to generate the report USING DOCKER
 This project includes a Docker image that generates the report automatically.
 
 Image: adrianagy/final_project_image2
@@ -47,7 +32,7 @@ Image: adrianagy/final_project_image2
 a) Build the Docker image (optional)
    If you want to rebuild the Docker image locally, you can run:
    ```bash
-      docker build -t adrianagy/final_project_image .
+      docker build -t adrianagy/final_project_image2 .
    ```
    This step is optional. It is included here for completeness (based on rubric). 
    You do not need to do this to generate the report if you use the Docker Hub image.
